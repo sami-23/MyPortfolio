@@ -30,7 +30,7 @@
     <div class="header__content">
       <div class="header__logo-container">
         <div class="header__logo-img-cont">
-          <img src="./assets/jpg/icon.jpg" alt="Sami Malik Logo Image" class="header__logo-img">
+          <img src="./assets/jpeg/icon.jpg" alt="Sami Malik Logo Image" class="header__logo-img">
         </div>
         <span class="header__logo-sub">Sami Malik</span>
       </div>
@@ -503,8 +503,14 @@
 
     <div class="main-footer__lower">
       &copy; Copyright
-      <script>document.write(new Date().getFullYear())</script>. Made by
-      <a rel="noreferrer" target="_blank" href="index.html">Sami Malik</a>
+
+        <span id="year"></span>
+        <script>
+          const currentYear = new Date().getFullYear();
+          document.getElementById("year").textContent = currentYear;
+        </script>
+      . Made by
+      <a rel="noreferrer" target="_blank" href="https://www.fiverr.com/sami_malik?up_rollout=true">Sami Malik</a>
     </div>
   </footer>
 

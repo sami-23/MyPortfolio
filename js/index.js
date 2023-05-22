@@ -36,4 +36,5 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = '#'
 })
-;
+/* CSS for Privacy Console Log */
+console.log("%cPrivacy Notice: This website respects your privacy. We do not collect any personal data or use cookies. Feel free to fork this project from GitHub (https://github.com/sami-23/MyPortfolio.git) to customize your own awesome website! If you like my work, give me a ⭐️ on GitHub and spread the ❤️!", "background-color: #333; color: #fff; padding: 10px; font-size: 16px; font-weight: bold;");

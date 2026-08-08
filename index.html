@@ -1,526 +1,1009 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-  <title>Sami Malik | Software Developer</title>
-  <meta name="description"
-    content="A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product">
-  <meta name="author" content="Sami Malik">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sami Malik — Software Engineer, Full-Stack &amp; Applied AI</title>
+<meta name="description" content="Software engineer and technology leader, currently Freelance CTO at YouGuide International. Seven years across autonomous drone systems, production AI pipelines, and full-stack platforms for clients worldwide.">
+<meta name="author" content="Sami Malik">
+<link rel="canonical" href="https://samimalik.me/">
+<meta name="theme-color" content="#0E7C6B">
 
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://samimalik.me/">
+<meta property="og:title" content="Sami Malik — Software Engineer, Full-Stack &amp; Applied AI">
+<meta property="og:description" content="It starts as a website and becomes a payments system. It starts as a script and becomes the AI pipeline behind fifty thousand published guides.">
+<meta property="og:image" content="https://samimalik.me/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sami Malik — Software Engineer, Full-Stack and Applied AI.">
+<meta property="og:site_name" content="Sami Malik">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:image" content="https://samimalik.me/assets/og-cover.jpg">
+<meta name="twitter:image:alt" content="Sami Malik — Software Engineer, Full-Stack and Applied AI.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sami Malik — Software Engineer">
+<meta name="twitter:description" content="Nobody has ever hired me for just one thing.">
 
-  <link href='./css/style.css' rel='stylesheet'>
-  <link href='./css/testimonial.css' rel='stylesheet'>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E7C6B'/%3E%3Cpath d='M4 22 L9 22 L11 14 L13 25 L16 8 L19 25 L21 16 L23 22 L28 22' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap"
-    rel="stylesheet">
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sami Malik",
+  "alternateName": "Sami ur Rehman",
+  "url": "https://samimalik.me/",
+  "image": "https://samimalik.me/assets/og-cover.jpg",
+  "email": "mailto:hmsur11@gmail.com",
+  "jobTitle": "Freelance Chief Technology Officer",
+  "worksFor": { "@type": "Organization", "name": "YouGuide International BV" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Rawalpindi", "addressCountry": "PK" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Capital University of Science and Technology" },
+  "sameAs": [
+    "https://www.linkedin.com/in/malik-sami-rehman/",
+    "https://github.com/sami-23",
+    "https://www.fiverr.com/sami_malik"
+  ],
+  "knowsAbout": ["Software Engineering","Full-Stack Development","Applied AI","LLM Pipelines","RF Signal Processing","UAV Autonomy","Technical Leadership"]
+}
+</script>
+
+<style>
+  /* minimal reset — the artifact host supplies one; standalone needs its own */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; }
+  img, canvas, svg { display: block; max-width: 100%; }
+  button { font: inherit; }
+</style>
 </head>
-
 <body>
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="./assets/jpeg/icon.jpg" alt="Sami Malik Logo Image" class="header__logo-img">
-        </div>
-        <span class="header__logo-sub">Sami Malik</span>
-      </div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="#" class="header__link"> Home </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="index.html#about" class="header__link">About </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="index.html#projects" class="header__link"> Projects </a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="index.html#contact" class="header__link"> Contact </a>
-          </li>
-        </ul>
-        <div class="header__main-ham-menu-cont">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
-            alt="hamburger menu" class="header__main-ham-menu">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
-            alt="hamburger menu close" class="header__main-ham-menu-close d-none">
-        </div>
-      </div>
-    </div>
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link">
-            <a href="#"> Home </a>
-          </li>
+<style>
+  /* ============================================================
+     Tokens — light is the base; dark redefines tokens only.
+     ============================================================ */
+  :root {
+    --ground:      #F2F4F3;
+    --surface:     #FFFFFF;
+    --surface-alt: #E9EDEB;
+    --ink:         #101816;
+    --ink-soft:    #3B4946;
+    --muted:       #66756F;
+    --rule:        #D3DAD8;
+    --accent:      #0E7C6B;
+    --accent-soft: #0E7C6B1A;
+    --peak:        #C2621A;
+    --shadow:      0 1px 2px #10181608, 0 8px 24px #1018160A;
 
-          <li class="header__sm-menu-link">
-            <a href="index.html#about"> About </a>
-          </li>
+    --f-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --f-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --f-mono: ui-monospace, "Cascadia Mono", "SF Mono", "Consolas", "Liberation Mono", monospace;
 
-          <li class="header__sm-menu-link">
-            <a href="index.html#projects"> Projects </a>
-          </li>
+    --step--1: clamp(0.78rem, 0.76rem + 0.10vw, 0.84rem);
+    --step-0:  clamp(1.00rem, 0.97rem + 0.16vw, 1.09rem);
+    --step-1:  clamp(1.20rem, 1.13rem + 0.34vw, 1.42rem);
+    --step-2:  clamp(1.48rem, 1.33rem + 0.72vw, 1.95rem);
+    --step-3:  clamp(1.85rem, 1.56rem + 1.42vw, 2.80rem);
+    --step-4:  clamp(2.30rem, 1.72rem + 2.85vw, 4.20rem);
 
-          <li class="header__sm-menu-link">
-            <a href="index.html#contact"> Contact </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <section class="home-hero">
-    <div class="home-hero__content">
-      <h1 class="heading-primary1">Hey, I'm Sami Malik</h1>
-      <div class="home-hero__info">
-        <p class="text-primary-1">
-          A versatile developer crafting innovative web and software solutions that transform ideas into reality.
-        </p>
-      </div>
-      <div class="home-hero__cta">
-        <a href="index.html#projects" class="btn1 btn--bg">Projects</a>
-      </div>
-    </div>
-    <div class="home-hero__socials">
-      <div class="home-hero__social">
-        <a href="https://linkedin.com/in/malik-sami-rehman" class="home-hero__social-icon-link" rel="noreferrer"
-          target="_blank">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
-            alt="Sami Malik Linkedin Profile" class="home-hero__social-icon">
-        </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="https://twitter.com/MalikSamiRehman" class="home-hero__social-icon-link" rel="noreferrer"
-          target="_blank">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg"
-            alt="Sami Malik Twitter Profile" class="home-hero__social-icon">
-        </a>
-      </div>
-      <div class="home-hero__social">
-        <a href="https://github.com/sami-23" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
-            alt="Sami Malik Github Profile" class="home-hero__social-icon">
-        </a>
+    --gut: clamp(1.25rem, 4vw, 2.5rem);
+    --measure: 68ch;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:      #0B1210;
+      --surface:     #121B19;
+      --surface-alt: #18231F;
+      --ink:         #E4EAE8;
+      --ink-soft:    #B6C2BE;
+      --muted:       #829691;
+      --rule:        #24322E;
+      --accent:      #3FBFA5;
+      --accent-soft: #3FBFA522;
+      --peak:        #E0873C;
+      --shadow:      0 1px 2px #00000040, 0 8px 24px #00000030;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:      #0B1210;
+    --surface:     #121B19;
+    --surface-alt: #18231F;
+    --ink:         #E4EAE8;
+    --ink-soft:    #B6C2BE;
+    --muted:       #829691;
+    --rule:        #24322E;
+    --accent:      #3FBFA5;
+    --accent-soft: #3FBFA522;
+    --peak:        #E0873C;
+    --shadow:      0 1px 2px #00000040, 0 8px 24px #00000030;
+  }
+
+  /* ============================================================
+     Base
+     ============================================================ */
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--f-body);
+    font-size: var(--step-0);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 { font-family: var(--f-display); font-weight: 600; text-wrap: balance; line-height: 1.15; margin: 0; }
+  p { margin: 0; }
+  a { color: inherit; }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .wrap {
+    width: min(100% - var(--gut) * 2, 1080px);
+    margin-inline: auto;
+  }
+
+  .eyebrow {
+    font-family: var(--f-mono);
+    font-size: var(--step--1);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0;
+  }
+
+  .prose { max-width: var(--measure); color: var(--ink-soft); display: flex; flex-direction: column; gap: 1rem; }
+
+  section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
+  section + section { border-top: 1px solid var(--rule); }
+
+  .sec-head { display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 2.75rem; }
+  .sec-head h2 { font-size: var(--step-3); }
+
+  /* ============================================================
+     Header
+     ============================================================ */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--ground) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 58px; }
+  .brand { font-family: var(--f-mono); font-size: var(--step--1); letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
+  .brand b { color: var(--accent); font-weight: 600; }
+  .navlinks { display: flex; gap: 1.5rem; }
+  .navlinks a {
+    font-family: var(--f-mono); font-size: var(--step--1); letter-spacing: 0.06em;
+    color: var(--muted); text-decoration: none; transition: color .18s;
+  }
+  .navlinks a:hover { color: var(--accent); }
+  @media (max-width: 720px) {
+    .navlinks { gap: 1rem; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    .navlinks::-webkit-scrollbar { display: none; }
+    .navlinks a { white-space: nowrap; }
+    .brand { display: none; }
+  }
+
+  .toggle {
+    display: grid; place-items: center;
+    width: 34px; height: 34px; padding: 0;
+    background: transparent; border: 1px solid var(--rule); border-radius: 50%;
+    color: var(--muted); cursor: pointer; transition: color .18s, border-color .18s;
+  }
+  .toggle:hover { color: var(--accent); border-color: var(--accent); }
+  .toggle svg { width: 15px; height: 15px; }
+  :root:not([data-theme="dark"]) .i-sun { display: none; }
+  :root[data-theme="dark"] .i-moon { display: none; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .i-moon { display: none; }
+    :root:not([data-theme="light"]) .i-sun  { display: block; }
+    :root[data-theme="light"] .i-sun { display: none; }
+    :root[data-theme="light"] .i-moon { display: block; }
+  }
+
+  /* ============================================================
+     Hero
+     ============================================================ */
+  .hero { padding-block: clamp(3.5rem, 9vw, 7rem) clamp(2rem, 4vw, 3rem); border-top: 0; }
+  .hero-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+  .hero h1 { font-size: var(--step-4); letter-spacing: -0.015em; }
+  .hero .role {
+    font-family: var(--f-mono); font-size: var(--step--1);
+    letter-spacing: 0.13em; text-transform: uppercase; color: var(--muted);
+  }
+  .hero .lede { font-size: var(--step-1); color: var(--ink-soft); max-width: 60ch; line-height: 1.5; }
+  .hero .lede strong { color: var(--ink); font-weight: 600; }
+
+  .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-family: var(--f-mono); font-size: var(--step--1); letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 0.7rem 1.15rem; border-radius: 3px; text-decoration: none;
+    border: 1px solid var(--accent); transition: background .18s, color .18s, transform .18s;
+  }
+  .btn-solid { background: var(--accent); color: var(--ground); }
+  .btn-ghost { background: transparent; color: var(--accent); }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-ghost:hover { background: var(--accent-soft); }
+
+  .domains {
+    margin-top: 2.75rem; border-block: 1px solid var(--rule);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+  }
+  .domain {
+    padding: 1.15rem 0.25rem 1.15rem 0;
+    display: flex; flex-direction: column; gap: 0.3rem;
+  }
+  .domain .n {
+    font-family: var(--f-mono); font-size: 0.66rem; letter-spacing: 0.13em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  .domain .d { font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
+
+  /* ============================================================
+     Metrics
+     ============================================================ */
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(158px, 1fr)); gap: 1px; background: var(--rule); border-block: 1px solid var(--rule); }
+  .metric { background: var(--ground); padding: 1.4rem 1.1rem; display: flex; flex-direction: column; gap: 0.3rem; }
+  .metric dt { font-family: var(--f-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); order: 2; }
+  .metric dd { margin: 0; font-family: var(--f-display); font-size: var(--step-2); font-variant-numeric: tabular-nums; color: var(--ink); order: 1; line-height: 1; }
+  .metric dd span { color: var(--accent); }
+
+  /* ============================================================
+     Timeline
+     ============================================================ */
+  /* ============================================================
+     Work
+     ============================================================ */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 1.25rem; }
+  .card {
+    background: var(--surface); border: 1px solid var(--rule); border-radius: 4px;
+    padding: 1.6rem; display: flex; flex-direction: column; gap: 0.8rem;
+    box-shadow: var(--shadow); transition: border-color .2s, transform .2s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .tag {
+    align-self: flex-start; font-family: var(--f-mono); font-size: 0.66rem;
+    letter-spacing: 0.12em; text-transform: uppercase; padding: 0.22rem 0.5rem;
+    border-radius: 2px; border: 1px solid currentColor;
+  }
+  .t-def { color: var(--peak); }
+  .t-ai  { color: var(--accent); }
+  .t-com { color: var(--muted); }
+  .card h3 { font-size: var(--step-1); }
+  .visit {
+    display: inline-block; font-family: var(--f-mono); font-size: 0.66rem;
+    letter-spacing: 0.06em; color: var(--accent); text-decoration: none;
+    border-bottom: 1px solid transparent; vertical-align: middle; margin-left: 0.15rem;
+    white-space: nowrap; font-weight: 400;
+  }
+  .visit:hover { border-bottom-color: var(--accent); }
+  .card p { color: var(--ink-soft); font-size: 0.94rem; }
+  .stack { font-family: var(--f-mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.03em; margin-top: auto; padding-top: 0.6rem; border-top: 1px solid var(--rule); }
+
+  .more { margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: baseline; }
+  .more-label { font-family: var(--f-mono); font-size: var(--step--1); color: var(--muted); letter-spacing: 0.06em; }
+  .chip { font-family: var(--f-mono); font-size: 0.75rem; color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 2px; padding: 0.2rem 0.55rem; }
+
+  /* ============================================================
+     Capabilities
+     ============================================================ */
+  .caps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.75rem 2.5rem; }
+  .cap h3 { font-family: var(--f-mono); font-size: var(--step--1); letter-spacing: 0.11em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 0.6rem; }
+  .cap p { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.7; }
+
+  /* ============================================================
+     Quotes
+     ============================================================ */
+  .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+  .quote { display: flex; flex-direction: column; gap: 1rem; padding: 1.6rem; border-left: 2px solid var(--accent); background: var(--surface); border-radius: 0 4px 4px 0; }
+  .quote blockquote { margin: 0; font-family: var(--f-display); font-size: var(--step-1); line-height: 1.45; color: var(--ink); }
+  .quote cite { font-style: normal; font-family: var(--f-mono); font-size: 0.75rem; color: var(--muted); line-height: 1.6; letter-spacing: 0.02em; }
+  .quote cite b { color: var(--ink-soft); font-weight: 600; display: block; }
+
+  /* ============================================================
+     Contact + footer
+     ============================================================ */
+  .contact-grid { display: flex; flex-direction: column; gap: 2.5rem; }
+  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+  .link {
+    background: var(--surface); padding: 1.15rem 1.3rem; text-decoration: none;
+    display: flex; flex-direction: column; gap: 0.2rem; transition: background .18s;
+  }
+  .link:hover { background: var(--accent-soft); }
+  .link .k { font-family: var(--f-mono); font-size: 0.68rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--muted); }
+  .link .v { color: var(--ink); font-size: 0.95rem; word-break: break-word; }
+  .link:hover .v { color: var(--accent); }
+
+  footer { border-top: 1px solid var(--rule); padding-block: 2rem 2.75rem; }
+  .foot-in { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; justify-content: space-between; font-family: var(--f-mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.04em; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+
+  /* ---- media plates ----
+     Framed like an instrument readout: a mono caption bar above the media,
+     so every asset carries its own provenance and year. */
+  .plate {
+    margin: 0; border: 1px solid var(--rule); border-radius: 4px;
+    background: var(--surface); overflow: hidden; box-shadow: var(--shadow);
+  }
+  .plate-bar {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+    padding: 0.5rem 0.8rem; border-bottom: 1px solid var(--rule);
+    font-family: var(--f-mono); font-size: 0.66rem; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .plate-bar b { color: var(--accent); font-weight: 500; }
+  .plate-bar .yr { color: var(--muted); flex: none; }
+  .plate img, .plate video { display: block; width: 100%; height: auto; }
+  @media (max-width: 560px) {
+    .plate-bar { flex-direction: column; gap: 0.15rem; line-height: 1.4; }
+    .plate-bar .yr { align-self: flex-start; }
+  }
+
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+  @media (max-width: 620px) { .duo { grid-template-columns: 1fr; } }
+  .duo .plate img { aspect-ratio: 4 / 3; object-fit: cover; }
+
+  .ch-media { display: flex; flex-direction: column; gap: 0.9rem; margin-block: 0.4rem; }
+
+  .card-media {
+    margin: -1.6rem -1.6rem 0.35rem; border-bottom: 1px solid var(--rule);
+    background: var(--surface-alt); overflow: hidden;
+  }
+  .card-media img, .card-media video { display: block; width: 100%; height: 178px; object-fit: cover; }
+  .card-media-tall img { height: auto; aspect-ratio: 1202 / 570; }
+  @media (min-width: 900px) { .card-wide { grid-column: span 2; } }
+
+  .hero-plate { margin-top: 2.25rem; }
+
+  /* portrait-orientation sources cropped to a landscape band */
+  .plate-band img { aspect-ratio: 16 / 9; object-fit: cover; object-position: center 38%; }
+
+  /* ---- contact portrait ---- */
+  .contact-split { display: grid; grid-template-columns: 190px 1fr; gap: 2rem; align-items: start; }
+  @media (max-width: 700px) { .contact-split { grid-template-columns: 1fr; max-width: 320px; } }
+  .contact-split .plate img { aspect-ratio: 4 / 5; object-fit: cover; object-position: center 22%; }
+
+  /* ---- skip link ---- */
+  .skip {
+    position: absolute; left: -9999px; top: 0; z-index: 100;
+    background: var(--accent); color: var(--ground); padding: 0.6rem 1rem;
+    font-family: var(--f-mono); font-size: 0.8rem; text-decoration: none;
+  }
+  .skip:focus { left: 0; }
+
+  /* ---- narrative chapters ---- */
+  .chapters { display: flex; flex-direction: column; }
+
+  .chapter {
+    display: grid; grid-template-columns: 150px 1fr; gap: 3rem;
+    padding-block: clamp(2.75rem, 6vw, 4.5rem);
+  }
+  .chapter + .chapter { border-top: 1px solid var(--rule); }
+  @media (max-width: 820px) { .chapter { grid-template-columns: 1fr; gap: 1.25rem; } }
+
+  .ch-rail { display: flex; flex-direction: column; gap: 0.35rem; position: sticky; top: 88px; align-self: start; }
+  @media (max-width: 820px) { .ch-rail { position: static; flex-direction: row; align-items: baseline; gap: 0.9rem; } }
+
+  .ch-num {
+    font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.16em;
+    color: var(--accent);
+  }
+  .ch-year {
+    font-family: var(--f-display); font-size: var(--step-1);
+    font-variant-numeric: tabular-nums; color: var(--ink); line-height: 1.1;
+  }
+  .ch-place { font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.06em; color: var(--muted); }
+  @media (max-width: 820px) { .ch-place { margin-left: auto; } }
+
+  .ch-body { display: flex; flex-direction: column; gap: 1.15rem; max-width: var(--measure); }
+  .ch-body h3 { font-size: var(--step-2); letter-spacing: -0.01em; }
+  .ch-body p { color: var(--ink-soft); }
+  .ch-body p strong { color: var(--ink); font-weight: 600; }
+  .ilink { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+  .ilink:hover { border-bottom-color: var(--accent); }
+
+  /* a number that mattered in this chapter */
+  .pull {
+    display: flex; flex-wrap: wrap; gap: 1.75rem;
+    padding: 1.1rem 0; margin-block: 0.25rem;
+    border-block: 1px solid var(--rule);
+  }
+  .pull div { display: flex; flex-direction: column; gap: 0.15rem; }
+  .pull b {
+    font-family: var(--f-display); font-size: var(--step-1);
+    font-variant-numeric: tabular-nums; color: var(--accent); line-height: 1; font-weight: 600;
+  }
+  .pull span { font-family: var(--f-mono); font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+
+  /* education inset — lives inside chapter one */
+  .edu {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-left: 2px solid var(--peak); border-radius: 0 4px 4px 0;
+    padding: 1.35rem 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;
+  }
+  .edu-top { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; align-items: baseline; }
+  .edu-top h4 { margin: 0; font-family: var(--f-display); font-size: var(--step-1); font-weight: 600; }
+  .edu-top .yr { font-family: var(--f-mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.06em; margin-left: auto; }
+  .edu .school { font-size: 0.9rem; color: var(--ink-soft); }
+  .edu ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .edu li {
+    font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.03em;
+    color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 2px; padding: 0.22rem 0.55rem;
+  }
+  .edu li b { color: var(--peak); font-weight: 600; }
+</style>
+
+<a class="skip" href="#top">Skip to content</a>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top">SAMI<b>/</b>MALIK</a>
+    <nav class="navlinks">
+      <a href="#story">Story</a>
+      <a href="#work">Work</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle" id="themeBtn" type="button" aria-label="Switch colour theme">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <p class="role">Software Engineer &middot; Full-Stack &middot; Applied AI &middot; Technical Leadership</p>
+      <h1>Nobody has ever hired me for just one thing.</h1>
+      <p class="lede">
+        It starts as a website and becomes a payments system. It starts as a script and becomes the AI pipeline
+        behind <strong>fifty thousand published guides</strong>. It started, once, as ground control software and
+        ended with me learning to fly the drone. Currently
+        <strong>Freelance CTO at YouGuide International</strong>, a Belgian company I work with remotely.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="#story">Read the story</a>
+        <a class="btn btn-ghost" href="mailto:hmsur11@gmail.com">Get in touch</a>
       </div>
 
-      <div class="home-hero__social">
-        <a href="https://www.fiverr.com/sami_malik" class="home-hero__social-icon-link" rel="noreferrer"
-          target="_blank">
-          <img src="./assets/png/fiverr.png" alt="Sami Malik Fiverr Profile" class="home-hero__social-icon">
-        </a>
+      <div class="domains">
+        <div class="domain"><span class="n">Web platforms</span><span class="d">React, Next.js, Node &amp; APIs</span></div>
+        <div class="domain"><span class="n">Applied AI</span><span class="d">LLM pipelines at production scale</span></div>
+        <div class="domain"><span class="n">Cloud &amp; DevOps</span><span class="d">AWS, Docker, CI &amp; automated testing</span></div>
+        <div class="domain"><span class="n">Mobile &amp; desktop</span><span class="d">SwiftUI, Android, Electron</span></div>
+        <div class="domain"><span class="n">Autonomous systems</span><span class="d">Mission-critical embedded work</span></div>
       </div>
-    </div>
-    <div class="home-hero__mouse-scroll-cont">
-      <div class="mouse"></div>
+
+      <figure class="plate hero-plate">
+        <figcaption class="plate-bar">
+          <span><b>Ground control station</b> &mdash; multi-UAV mission planning over 3D terrain</span>
+          <span class="yr">Quest Lab</span>
+        </figcaption>
+        <video src="assets/gcs-mission.mp4" autoplay muted loop playsinline preload="metadata"
+               aria-label="Screen recording of a ground control station: a mission path drawn over 3D satellite terrain, with the flown track advancing along it."></video>
+      </figure>
     </div>
   </section>
-  <section id="about" class="about sec-pad">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main">About Me</span>
-        <span class="heading-sec__sub">
-          Here you will find more information about me, what I do, and my
-          current skills mostly in terms of programming and technology
-        </span>
-      </h2>
-      <div class="about__content">
-        <div class="about__content-main">
-          <h3 class="about__content-title">Get to know me!</h3>
-          <div class="about__content-details">
-            <p class="about__content-details-para">
-              I'm a passionate and dedicated Software Developer with a keen interest in web and software development.
-              With a strong foundation in computer science and years of hands-on experience, I thrive on transforming
-              complex concepts into elegant, user-centric solutions.
-              I possess a diverse skill set that spans across <strong>Web Development</strong>, <strong>Software
-                Development</strong>, and <strong>Mobile App Development</strong>.
 
-            </p>
-            <p class="about__content-details-para">
-              My goal is to create <strong>Impactful Digital Experiences</strong> that not only meet client objectives
-              but also exceed user expectations.
-              With a drive for continuous learning and an eye for detail, I am constantly exploring new
-              <strong>Technologies</strong> and techniques to stay at the forefront of the ever-evolving tech landscape.
-            </p>
+  <dl class="metrics">
+    <div class="metric"><dt>Guides published by the AI pipeline</dt><dd>50,000<span>+</span></dd></div>
+    <div class="metric"><dt>Products running on one platform</dt><dd>3<span></span></dd></div>
+    <div class="metric"><dt>Wix sites delivered &mdash; Legend Partner</dt><dd>75<span>+</span></dd></div>
+    <div class="metric"><dt>Fiverr Pro rating, 114 reviews</dt><dd>4.9<span>&#9733;</span></dd></div>
+    <div class="metric"><dt>Years building in production</dt><dd>7<span>+</span></dd></div>
+  </dl>
 
-            <p class="about__content-details-para">
-              I'm open to <strong>Job</strong> opportunities where I can
-              contribute, learn and grow. If you have a good opportunity that
-              matches my skills and experience then don't hesitate to
-              contact me. Let's <strong>Collaborate</strong> and bring your ideas to life!
-            </p>
-          </div>
-          <a href="index.html#contact" class="btn1 btn--med btn--theme dynamicBgClr">Contact</a>
-        </div>
-        <div class="about__content-skills">
-          <h3 class="about__content-title">My Skills</h3>
-          <div class="skills">
-            <div class="skills__skill">HTML</div>
-            <div class="skills__skill">CSS</div>
-            <div class="skills__skill">JavaScript</div>
-            <div class="skills__skill">React</div>
-            <div class="skills__skill">SASS</div>
-            <div class="skills__skill">GIT</div>
-            <div class="skills__skill">Github</div>
-            <div class="skills__skill">Responsive Design</div>
-            <div class="skills__skill">SEO</div>
-            <div class="skills__skill">Terminal</div>
-            <div class="skills__skill">Express</div>
-            <div class="skills__skill">Electron</div>
-            <div class="skills__skill">NodeJS</div>
-            <div class="skills__skill">MERN Stack</div>
-            <div class="skills__skill">Velo Developer</div>
-            <div class="skills__skill">Wix Website Developer</div>
-            <div class="skills__skill">Java</div>
-            <div class="skills__skill">C++</div>
-            <div class="skills__skill">Python</div>
-            <div class="skills__skill">SQL</div>
-
-          </div>
-        </div>
-      </div>
+<section id="story">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">How I got here</p>
+      <h2>Five chapters, one direction.</h2>
     </div>
-  </section>
-  <section id="projects" class="projects sec-pad">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Projects</span>
-        <span class="heading-sec__sub">
-          With a diverse portfolio spanning multiple industries, I have showcased my adaptability and technical skills
-          as a developer. From PR agencies to logistics services, audiobook distribution to math practice platforms, I
-          bring innovative ideas to life and deliver tailored solutions that meet the unique needs of each
-          industry.<br><br>
-          Here you will find some of the projects that I
-          created with each project containing its own case study
-        </span>
-      </h2>
 
-      <div class="projects__content">
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/1.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">ColourPR</h3>
-            <p class="projects__row-content-desc">
-              I brought to life the vision of a vibrant London-based consumer and B2B PR agency using Wix, custom HTML,
-              and JavaScript.
-              The website showcases their diverse portfolio and expertise in the arts, entertainment,
-              culture, education, health, and hospitality sectors.
-              The website is tailored to their specific requirements, delivering a visually appealing and impactful
-              online presence.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.colourpr.com/' target='_blank'>Visit
-              Website</a>
-          </div>
+    <div class="chapters">
+
+      <article class="chapter">
+        <div class="ch-rail">
+          <span class="ch-num">CH. 01</span>
+          <span class="ch-year">2014&ndash;18</span>
+          <span class="ch-place">Rawalpindi</span>
         </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/2.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Audio Book Release</h3>
-            <p class="projects__row-content-desc">
-              As the developer of Audiobook Release, I created a seamless platform for e-Audio Productions, providing
-              exceptional service,
-              global distribution, and high royalty payouts to authors and publishers. With a strong focus on
-              development,
-              I built an innovative website to facilitate effective release strategies and promotion tools for
-              audiobooks.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.audiobookrelease.com/'
-              target='_blank'>Visit Website</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/3.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Envision Media</h3>
-            <p class="projects__row-content-desc">
-              I designed and implemented a customized booking system for their photography events, including weddings,
-              real estate, and other photoshoots. By leveraging my expertise, I created a user-friendly website that
-              enables seamless booking and showcases their portfolio in an engaging manner.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.envisiondmv.com/' target='_blank'>Visit
-              Website</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/4.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">JK Logistics</h3>
-            <p class="projects__row-content-desc">
-              I have successfully crafted a comprehensive online platform for their transportation services.
-              By utilizing my expertise, I created a user-friendly website that effectively highlights their range of
-              offerings.
-              Through intuitive design
-              and seamless functionality, I have provided JK Logistics with a professional online presence that
-              showcases their expertise in the industry.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.jklogisticsllc.com/' target='_blank'>Visit
-              Website</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/5.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Klang Kreise</h3>
-            <p class="projects__row-content-desc">
-              As the developer of Klang Kreise's website, I built an event management system and
-              digital platform aligned with their mission of creating sacred sound spaces for deep knowledge,
-              transformation, and healing. Through my expertise in web development, I brought their vision to life,
-              enabling individuals to discover and participate in these sacred sound experiences.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.klangkreise.com/' target='_blank'>Visit
-              Website</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/6.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Math Addiction</h3>
-            <p class="projects__row-content-desc">
-              I take pride in creating an engaging platform that promotes a passion for mathematics and facilitates
-              learning.
-              By developing interactive quizzes and the entire website, I aimed to provide students with a free and
-              accessible resource for unlimited math practice.
-              Through a healthy cycle of practice, improvement, and gaining confidence, users can enhance their
-              mathematical skills.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.mathaddiction.org/' target='_blank'>Visit
-              Website</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/7.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Rolla Video</h3>
-            <p class="projects__row-content-desc">
-              I focused on delivering a user-friendly platform that empowers users to create professional, branded video
-              content effortlessly.
-              With Rolla, even those without prior film experience can harness the power of video to fuel business
-              growth.
-              By providing intuitive tools and a seamless experience, I enabled users to create consistent and impactful
-              video content with ease.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.rollavideo.com/' target='_blank'>Visit
-              Website</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/8.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">Tier 7 Network</h3>
-            <p class="projects__row-content-desc">
-              As the developer of Tier 7 Trading's website, I created a robust platform that consolidates and amplifies
-              trading power.
-              Our secure network provides key edges for greater financial success.
-              With a focus on user experience, I engineered a seamless and efficient trading experience.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.tier7trading.com/' target='_blank'>Visit
-              Website</a>
-          </div>
-        </div>
-        <div class="projects__row">
-          <div class="projects__row-img-cont">
-            <img src="./assets/jpeg/9.jpg" alt="Software Screenshot" class="projects__row-img" loading="lazy">
-          </div>
-          <div class="projects__row-content">
-            <h3 class="projects__row-content-title">WISEcode</h3>
-            <p class="projects__row-content-desc">
-              I crafted an intuitive platform that streamlines the discovery of suitable survival foods.
-              By leveraging intelligent development techniques, I created a user-friendly interface that allows users to
-              easily search
-              and explore a comprehensive database. With a focus on functionality and efficiency,
-              I empowered users to make informed decisions and enhance their preparedness.
-            </p>
-            <a class='btn1 btn--med btn--theme dynamicBgClr' href='https://www.foods.wisecode.ai/' target='_blank'>Visit
-              Website</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="testimonial">
-    <div class="container">
-      <h2 class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Testimonials</span>
-        <!-- <span class="heading-sec__sub">
-          With a diverse portfolio spanning multiple industries, I have showcased my adaptability and technical skills
-          as a developer. From PR agencies to logistics services, audiobook distribution to math practice platforms, I
-          bring innovative ideas to life and deliver tailored solutions that meet the unique needs of each
-          industry.<br><br>
-          Here you will find some of the projects that I
-          created with each project containing its own case study
-        </span> -->
-      </h2>
-        <div class="row">
-            <div class="col-lg-6 d-none d-lg-block">
-                <ol class="carousel-indicators tabs">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                        <figure>
-                            <img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/e5eb851c3556ebaa6c977d2e6023e7df-1631093182614/c826dc5c-485f-4914-87a1-cf4e0fadfe2c.jpeg" class="img-fluid" alt="">
-                        </figure>
-                    </li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                        <figure>
-                            <img src="https://static.wixstatic.com/media/e8936d_83f0e91dd0df4c37821a9c5b50f9e574~mv2.jpg/v1/fill/w_210,h_210,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Sara_Borghi_Sito.jpg" class="img-fluid" alt="">
-                        </figure>
-                    </li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                        <figure>
-                            <img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/acb1ece0876929d8671cb5645468b170-1588006873210/37c22ac1-8664-4c22-ba81-9b09b1f3d88f.jfif" class="img-fluid" alt="">
-                        </figure>
-                    </li>
-                </ol>
+        <div class="ch-body">
+          <h3>Learning to build, and learning why it paid to.</h3>
+          <p>
+            I studied computer science at Capital University of Science and Technology, and I was the kind of
+            student who kept building things nobody assigned &mdash; an mp3 player in Swift, a management system for
+            a local medical store, an Android game about kicking rival politicians out of parliament. Some were
+            good. Most were not. All of them taught me more than the coursework did.
+          </p>
+          <p>
+            I also started taking freelance work while still studying. Partly curiosity, but honestly, mostly
+            arithmetic: what a developer earns locally and what the same work earns abroad are different numbers,
+            and I wanted the second one. That decision shaped the next decade more than any single technology I
+            learned.
+          </p>
+
+          <figure class="plate">
+            <figcaption class="plate-bar">
+              <span><b>Graduation</b> &mdash; that's me on the right, mid-air</span>
+              <span class="yr">2018</span>
+            </figcaption>
+            <video src="assets/graduation.mp4" poster="assets/graduation.jpg" autoplay muted loop playsinline preload="none"
+                   aria-label="Graduation photograph in which the view pushes in on Sami mid-jump while the rest of the class falls out of focus."></video>
+          </figure>
+
+          <div class="edu">
+            <div class="edu-top">
+              <h4>BS (Hons) Computer Science</h4>
+              <span class="yr">2014 &mdash; 2018</span>
             </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
-                    
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="quote-wrapper">
-                                <p>Sami was genuinely amazing. I had something I wanted to achieve on a WiX hosted website, I thought I knew how I wanted to implement it but Sami came up with a much more elegant solution that just works better. Thank you very much Sami, I really look forward to your assistance in the future. Because I know it's coming!</p>
-                                <h3>Dion Morrow <br> CEO, FreeLights</h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="quote-wrapper">
-                                <p>By far the best experience I have had working with an independent contractor anywhere, not just online. I cannot recommend him enough. Work ethic, communication, impeccable English and competitive fees. There is simply no reason to go anywhere else. I will be using him many times more.</p>
-                                <h3>Sara Borghi <br> Head of SEO at Reelevate, part of the Arsenalia Group</h3>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="quote-wrapper">
-                                <p>Working with Sami was a very pleasant experience. Everything went smoothly and the work delivered was customized to my needs. Would definitely work with Sami again!</p>
-                                <h3>Ashley Murphy <br> Founder / Executive Director at Global Financial Planning Institute</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                </div>
-            </div>
+            <p class="school">Capital University of Science and Technology, Islamabad</p>
+            <ul>
+              <li>CGPA <b>3.61</b></li>
+              <li><b>5&times;</b> Dean's Honour Award</li>
+              <li><b>1st</b> place &mdash; inter-university speed programming, 12 universities</li>
+            </ul>
+          </div>
         </div>
+      </article>
+
+      <article class="chapter">
+        <div class="ch-rail">
+          <span class="ch-num">CH. 02</span>
+          <span class="ch-year">2018&ndash;23</span>
+          <span class="ch-place">Quest Lab</span>
+        </div>
+        <div class="ch-body">
+          <h3>Four years where bugs grounded aircraft.</h3>
+          <p>
+            I joined a <a class="ilink" href="https://questlab.pk/" target="_blank" rel="noopener noreferrer">UAV dependability lab</a> straight out of university and stayed four years. The work was
+            unlike anything a web job teaches you: ground control software for drones flying in swarm and
+            formation, onboard autonomy running on companion computers so an aircraft keeps working when the
+            radio link drops, and analysis tooling for wide-band signal data.
+          </p>
+          <p>
+            The part that changed me was not the code. It was standing in a field watching something I had
+            written fly. <strong>I trained to fly the aircraft myself</strong> so I could test properly, because
+            simulation tells you what you modelled and flight tells you what you missed. When your software has a
+            physical consequence, you stop treating "it worked on my machine" as an answer.
+          </p>
+
+          <div class="ch-media">
+            <div class="duo">
+              <figure class="plate">
+                <figcaption class="plate-bar"><span><b>Field testing</b></span><span class="yr">Quest Lab</span></figcaption>
+                <img src="assets/field-team.jpg" alt="Field team seated at a folding table on a dirt embankment beside a fixed-wing UAV." loading="lazy" width="1280" height="960">
+              </figure>
+              <figure class="plate">
+                <figcaption class="plate-bar"><span><b>Pre-flight</b></span><span class="yr">Quest Lab</span></figcaption>
+                <img src="assets/assembly.jpg" alt="Two engineers assembling a multirotor airframe in a field before a test flight." loading="lazy" width="960" height="1280">
+              </figure>
+            </div>
+
+            <figure class="plate">
+              <figcaption class="plate-bar">
+                <span><b>Flight log comparison</b> &mdash; two sorties replayed against each other</span>
+                <span class="yr">Quest Lab</span>
+              </figcaption>
+              <video src="assets/flight-logs.mp4" autoplay muted loop playsinline preload="none"
+                     aria-label="Two recorded flight tracks replayed over 3D terrain, with an aircraft marker advancing along the path."></video>
+            </figure>
+          </div>
+          <p>
+            The other half of the work was signals: analysis and direction-finding software running on
+            instrumentation hardware, deciding which spikes in a noisy spectrum were real transmitters and
+            where they were.
+          </p>
+          <div class="duo">
+            <figure class="plate">
+              <figcaption class="plate-bar"><span><b>Test bench</b></span><span class="yr">Quest Lab</span></figcaption>
+              <img src="assets/lab-bench.jpg" alt="Standing beside a rack of signal-analysis instrumentation and oscilloscopes." loading="lazy" width="1100" height="825">
+            </figure>
+            <figure class="plate">
+              <figcaption class="plate-bar"><span><b>Direction finding</b></span><span class="yr">Quest Lab</span></figcaption>
+              <img src="assets/df-screen.jpg" alt="Direction-finding console: polar bearing plot, amplitude-against-angle graphs and a table of detected emitters." loading="lazy" width="1200" height="650">
+            </figure>
+          </div>
+          <p>
+            I started as a software engineer and left as <strong>Team Lead</strong>, running a team of six, hiring
+            for the lab, and mentoring five interns through its programme.
+          </p>
+          <div class="pull">
+            <div><b>6</b><span>Engineers led</span></div>
+            <div><b>5</b><span>Interns mentored</span></div>
+            <div><b>4 yrs</b><span>Mission-critical systems</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="ch-rail">
+          <span class="ch-num">CH. 03</span>
+          <span class="ch-year">2022&ndash;</span>
+          <span class="ch-place">Independent</span>
+        </div>
+        <div class="ch-body">
+          <h3>Going independent, and learning the other half of engineering.</h3>
+          <p>
+            My first serious contract &mdash; a discovery platform for a Nevada company &mdash; overlapped my last
+            months at the lab. It went well enough that I stopped choosing between the two and left in
+            January 2023 to contract full time.
+          </p>
+          <p>
+            What followed taught me the half of software engineering that research work never does: scoping
+            honestly, quoting a number and standing behind it, explaining a technical trade-off to someone who
+            does not care about the technology, and shipping when a client's revenue depends on the date. I
+            delivered <strong>more than seventy-five websites and platforms</strong> for clients across the US, UK
+            and Europe, earned <strong>Legend</strong> status &mdash; the top tier of the Wix Partner Program &mdash;
+            and was vetted into <strong>Fiverr Pro</strong>.
+          </p>
+          <p>
+            The strongest thing I took from it is the client feedback further down this page. Repeat work and
+            referrals are a harder metric to game than a rating.
+          </p>
+          <figure class="plate plate-band">
+            <figcaption class="plate-bar">
+              <span><b>Remote, from Rawalpindi</b> &mdash; where most of this was built</span>
+              <span class="yr">Ongoing</span>
+            </figcaption>
+            <img src="assets/desk.jpg" alt="Working at a desk in front of a large monitor." loading="lazy" width="960" height="1280">
+          </figure>
+          <div class="pull">
+            <div><b>75+</b><span>Sites delivered</span></div>
+            <div><b>4.9&#9733;</b><span>Across 114 reviews</span></div>
+            <div><b>Legend</b><span>Wix Partner tier</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="ch-rail">
+          <span class="ch-num">CH. 04</span>
+          <span class="ch-year">2023&ndash;</span>
+          <span class="ch-place">Belgium &middot; remote</span>
+        </div>
+        <div class="ch-body">
+          <h3>From developer to CTO, in three years.</h3>
+          <p>
+            I joined <a class="ilink" href="https://youguide.com" target="_blank" rel="noopener noreferrer">YouGuide</a> as a software developer on a contract basis. Three years later I am its
+            <strong>Chief Technology Officer</strong>, having moved through Head of Development on the way. The
+            company is based in Diegem, Belgium, and <strong>I have worked with them remotely from Pakistan the
+            entire time</strong>. It is small &mdash; around ten people, with two engineers reporting to me &mdash;
+            and I want to be straight about that, because the title matters less than what it was earned for.
+          </p>
+          <p>
+            What it was earned for is the content engine. I built the AI generation and publishing pipeline that
+            has produced <strong>over fifty thousand travel and language guides</strong> across multiple languages.
+            The hard problem was never generating text; it was trust. Guides confidently describing places that do
+            not exist are worse than no guides at all, so I built a validation layer that verifies every referenced
+            location is real before anything publishes, and tightened the prompting until the failure rate fell.
+          </p>
+          <p>
+            That pipeline now earns its keep. The guides are licensed through partnerships with several of the
+            world's leading AI companies, and licensing has become a significant revenue line for the business.
+            I generalised
+            it into a reusable platform so two sibling products &mdash; a technical eBook catalogue and a botanical
+            guide service &mdash; could run on the same core without a rewrite, and built out an eSIM retail channel
+            on Amazon alongside it.
+          </p>
+          <div class="pull">
+            <div><b>50,000+</b><span>Guides published</span></div>
+            <div><b>Licensed</b><span>To leading AI companies</span></div>
+            <div><b>3</b><span>Products on one platform</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="ch-rail">
+          <span class="ch-num">CH. 05</span>
+          <span class="ch-year">Next</span>
+          <span class="ch-place">Open</span>
+        </div>
+        <div class="ch-body">
+          <h3>Still building.</h3>
+          <p>
+            Seven years across domains that aren't supposed to overlap &mdash; drones and web platforms, research
+            labs and revenue targets, writing the code and owning the architecture. All of it remotely, from
+            Pakistan, for teams in Europe and North America.
+          </p>
+          <p>
+            What interests me now is what interested me at the start: <strong>problems where the answer isn't
+            obvious yet</strong>, and where somebody has to be accountable for it actually working. If that sounds
+            like something you're building, I'd like to hear about it.
+          </p>
+        </div>
+      </article>
+
     </div>
+  </div>
 </section>
-  <section id="contact" class="contact sec-pad dynamicBg">
-    <div class="main-container">
-      <h2 class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-        <span class="heading-sec__sub heading-sec__sub--lt">
-          Feel free to Contact me by submitting the form below and I will get
-          back to you as soon as possible
-        </span>
-      </h2>
-      <div class="contact__form-container">
-        <form action='https://api.web3forms.com/submit' class='contact__form' method='post'>
-          <input type="hidden" name="access_key" value="0c40096a-3208-40b6-9843-b4c44e4529f5">
-          <input type="hidden" name="subject" value="Someone texted you from your portfolio">
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="name">Name</label>
-            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name" id="name">
+
+
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Selected work</p>
+        <h2>Systems I have built end to end.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-media">
+            <img src="assets/youguide-site.jpg" alt="YouGuide homepage: travel guide, language guide and eSIM products." loading="lazy" width="1100" height="487">
           </div>
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="email">Email</label>
-            <input required placeholder="Enter Your Email" type="email" class="contact__form-input" name="email"
-              id="email">
+          <span class="tag t-ai">AI platform</span>
+          <h3>YouGuide content engine <a class="visit" href="https://youguide.com" target="_blank" rel="noopener noreferrer">youguide.com &#8599;</a></h3>
+          <p>
+            The AI generation and publishing pipeline behind more than 50,000 travel and language guides,
+            licensed through partnerships with several of the world's leading AI companies. Generalised into a reusable platform and retargeted onto two sibling products &mdash;
+            technical eBook publishing and botanical guides &mdash; without rebuilding the core.
+          </p>
+          <p class="stack">LLM APIs &middot; prompt engineering &middot; output validation &middot; Node.js</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="assets/rolla-site.jpg" alt="Rolla Video homepage: collecting user-generated video at scale." loading="lazy" width="1100" height="487">
           </div>
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="message">Message</label>
-            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
-              name="message" id="message"></textarea>
+          <span class="tag t-com">Commercial</span>
+          <h3>Rolla Video <a class="visit" href="https://rollavideo.com" target="_blank" rel="noopener noreferrer">rollavideo.com &#8599;</a></h3>
+          <p>
+            Backend system and internal admin panel for a video-creation platform, wiring GraphQL queries and
+            mutations against production data, plus the customer-facing site and a self-serve campaign dashboard.
+            The platform grew to 5,726 accounts and 134,450 user-generated clips, and the work underpinned a
+            major enterprise account renewal and a multi-million-dollar enterprise RFP.
+          </p>
+          <p class="stack">Retool &middot; GraphQL &middot; Wix &middot; responsive web-app</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="assets/wisecode-site.jpg" alt="WISEcode homepage: checking whether food is ultra-processed." loading="lazy" width="1100" height="487">
           </div>
-          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-          <button type="submit" class="btn1 btn--theme contact__btn">
-            Submit
-          </button>
-        </form>
+          <span class="tag t-com">Commercial</span>
+          <h3>WISEcode <a class="visit" href="https://wisecode.ai/" target="_blank" rel="noopener noreferrer">wisecode.ai &#8599;</a></h3>
+          <p>
+            Discovery platform for survival foods, contracted through a Nevada LLC. Designed and built the
+            product, then reworked the architecture so a growing family of sites could be updated and managed
+            at scale rather than one at a time.
+          </p>
+          <p class="stack">Wix Velo &middot; JavaScript &middot; architecture</p>
+        </article>
+
+        <article class="card card-wide">
+          <div class="card-media card-media-tall">
+            <img src="assets/client-collage.jpg" alt="Grid of twelve client websites: a PR agency, catering and events, a cab service, a music-therapy charity, an IT consultancy, a creator-tools platform, an SEO consultant, a wellness brand, a real-estate media company, a trading network, a real-estate video product and a research lab." loading="lazy" width="1202" height="570">
+          </div>
+          <span class="tag t-com">Commercial</span>
+          <h3>75+ client web platforms</h3>
+          <p>
+            Years of contract delivery for businesses in PR, hospitality, logistics, publishing, music therapy,
+            IT consulting, transport and trading, across the US, UK and Europe &mdash; custom booking systems,
+            quiz engines, event management and payment integrations, built with real backend logic rather than
+            off-the-shelf plugins. Reached <strong>Legend</strong>, the highest tier of the Wix Partner Program,
+            and Fiverr's vetted Pro tier.
+          </p>
+          <p class="stack">JavaScript &middot; Node.js &middot; Wix Velo &middot; Stripe &middot; Chargebee &middot; Google APIs</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="assets/fixed-wing.jpg" alt="Fixed-wing UAV on grass before a test flight." loading="lazy" width="1100" height="825">
+          </div>
+          <span class="tag t-def">Mission-critical</span>
+          <h3>Autonomous UAV &amp; defence systems <a class="visit" href="https://questlab.pk/" target="_blank" rel="noopener noreferrer">questlab.pk &#8599;</a></h3>
+          <p>
+            Four years at a UAV research lab: a ground control station for drones flying in swarm and formation
+            with multi-UAV mission planning and a 3D GIS layer, onboard autonomy on companion computers that
+            keeps an aircraft working when the ground link drops, and the operator and situational-awareness
+            application for a wide-band signal-analysis system. Trained to fly, and validated it all in live
+            field testing.
+          </p>
+          <p class="stack">MAVLink &middot; ArduPilot &middot; Raspberry Pi &middot; CesiumJS &middot; LabVIEW &middot; ElectronJS &middot; MERN</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <video src="assets/gis-stitch.mp4" autoplay muted loop playsinline preload="none"
+                   aria-label="Live GIS map being generated from drone and satellite imagery, tiles stitching over terrain."></video>
+          </div>
+          <span class="tag t-ai">Geospatial</span>
+          <h3>GIS &amp; mapping tooling</h3>
+          <p>
+            A run of geospatial projects on one 3D mapping stack: live GIS maps generated by stitching drone and
+            satellite imagery into aligned tiles, 3D flight-path simulation for quadcopter and fixed-wing
+            platforms, and route planning over open street data.
+          </p>
+          <p class="stack">CesiumJS &middot; JavaScript &middot; tile pipelines &middot; OpenStreetMap</p>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <video src="assets/electoral.mp4" autoplay muted loop playsinline preload="none"
+                   aria-label="Electoral mapping tool: a constituency selected on satellite terrain, its candidate results and gender split shown, then the previous election compared against the current one with voter age bands and connectivity data."></video>
+          </div>
+          <span class="tag t-ai">Data &amp; mapping</span>
+          <h3>Electoral data mapping</h3>
+          <p>
+            An interactive platform for exploring national election data geographically. Constituencies render as
+            togglable layers over satellite terrain with district and polling-station overlays, and selecting a
+            seat opens its full picture: winning candidate, party, vote counts, turnout, registered-voter totals
+            and gender split. The analysis layer compares one election against the previous one, breaking results
+            down by voter age band and connectivity.
+          </p>
+          <p class="stack">CesiumJS &middot; JavaScript &middot; geospatial joins &middot; interactive data visualisation</p>
+        </article>
+
+        <article class="card">
+          <span class="tag t-com">Developer tooling</span>
+          <h3>MAPLE</h3>
+          <p>
+            A tool for automated generation of cross-platform mobile application variants, combining software
+            product-line engineering with model-driven engineering. Validated by using it to build matching
+            iOS and Android applications from a single model.
+          </p>
+          <p class="stack">Java &middot; JavaFX &middot; Eclipse PDE</p>
+        </article>
+      </div>
+
+      <div class="more">
+        <span class="more-label">Also delivered:</span>
+        <span class="chip">Audiobook Release</span>
+        <span class="chip">Tier 7 Network</span>
+        <span class="chip">Math Addiction</span>
+        <span class="chip">Klang Kreise</span>
+        <span class="chip">Envision Media</span>
+        <span class="chip">ColourPR</span>
+        <span class="chip">JK Logistics</span>
       </div>
     </div>
   </section>
-  <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
-        <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span>Social</span>
-          </h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/malik-sami-rehman/">
-              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="Sami Malik Linkedin Profile">
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/sami-23">
-              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="Sami Malik Github Profile">
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/MalikSamiRehman">
-              <img class="main-footer__icon" src="./assets/png/twitter-ico.png" alt="Sami Malik Twitter Profile">
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.fiverr.com/sami_malik">
-              <img class="main-footer__icon" src="https://i.ibb.co/7nnn73x/fiverrlogo.png" style = "color:white" alt="Sami Malik Fiverr Profile">
-            </a>
+
+
+  <section id="capabilities">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Capabilities</p>
+        <h2>What I work with.</h2>
+      </div>
+      <div class="caps">
+        <div class="cap">
+          <h3>Languages</h3>
+          <p>JavaScript, Python, Java, C++, Swift, SQL, LabVIEW, HTML5, CSS3</p>
+        </div>
+        <div class="cap">
+          <h3>Frontend</h3>
+          <p>React, Next.js, Redux, Tailwind CSS, SASS, Bootstrap, responsive design</p>
+        </div>
+        <div class="cap">
+          <h3>Backend &amp; APIs</h3>
+          <p>Node.js, Express, REST, GraphQL, JWT authentication</p>
+        </div>
+        <div class="cap">
+          <h3>Cloud &amp; infrastructure</h3>
+          <p>AWS (EC2, S3), Docker, Firebase auth and Cloud Functions, Railway, Render, Vercel, Netlify</p>
+        </div>
+        <div class="cap">
+          <h3>AI &amp; LLM</h3>
+          <p>OpenAI and Claude APIs, prompt engineering, hallucination mitigation, output validation, content pipelines</p>
+        </div>
+        <div class="cap">
+          <h3>Testing &amp; automation</h3>
+          <p>Cypress, Selenium for automated testing and scraping, Postman</p>
+        </div>
+        <div class="cap">
+          <h3>Platforms &amp; data</h3>
+          <p>Retool, Wix Velo, MongoDB, MySQL, Firebase, Stripe, Chargebee, Amazon SP-API</p>
+        </div>
+        <div class="cap">
+          <h3>Mobile &amp; desktop</h3>
+          <p>SwiftUI and iOS, Android with Java, ElectronJS</p>
+        </div>
+        <div class="cap">
+          <h3>Embedded &amp; autonomous</h3>
+          <p>MAVLink, ArduPilot, Raspberry Pi companion computers, CesiumJS GIS, NI PXIe instrumentation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Client feedback</p>
+        <h2>What working with me is like.</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>&ldquo;I thought I knew how I wanted to implement it, but Sami came up with a much more elegant solution that just works better.&rdquo;</blockquote>
+          <cite><b>Dion Morrow</b>CEO, FreeLights</cite>
+        </figure>
+        <figure class="quote">
+          <blockquote>&ldquo;By far the best experience I have had working with an independent contractor anywhere, not just online.&rdquo;</blockquote>
+          <cite><b>Sara Borghi</b>Head of SEO, Reelevate &mdash; Arsenalia Group</cite>
+        </figure>
+        <figure class="quote">
+          <blockquote>&ldquo;Everything went smoothly and the work delivered was customized to my needs. Would definitely work with Sami again.&rdquo;</blockquote>
+          <cite><b>Ashley Murphy</b>Founder, Global Financial Planning Institute</cite>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="sec-head" style="margin-bottom:0;">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk.</h2>
+      </div>
+      <div class="contact-split">
+        <figure class="plate">
+          <img src="assets/portrait.jpg" alt="Portrait of Sami Malik." loading="lazy" width="760" height="1217">
+        </figure>
+        <div class="prose">
+          <p>
+            I'm always interested in hearing about a hard problem &mdash; whether that's a role, a collaboration,
+            or a piece of contract work. The fastest way to reach me is email.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-ghost" href="assets/Sami_ur_Rehman_CV.pdf" download>Download CV (PDF)</a>
           </div>
         </div>
       </div>
-      <div class="main-footer__row main-footer__row-2">
-        <h2 class="heading heading-sm text-lt">Sami Malik</h2>
-        <p class="main-footer__short-desc">
-          A Frontend focused Web Developer building the Frontend of Websites
-          and Web Applications that leads to the success of the overall
-          product
-        </p>
+      <div class="links">
+        <a class="link" href="mailto:hmsur11@gmail.com"><span class="k">Email</span><span class="v">hmsur11@gmail.com</span></a>
+        <a class="link" href="https://www.linkedin.com/in/malik-sami-rehman/" target="_blank" rel="noopener noreferrer"><span class="k">LinkedIn</span><span class="v">malik-sami-rehman</span></a>
+        <a class="link" href="https://github.com/sami-23" target="_blank" rel="noopener noreferrer"><span class="k">GitHub</span><span class="v">sami-23</span></a>
+        <a class="link" href="https://www.fiverr.com/sami_malik" target="_blank" rel="noopener noreferrer"><span class="k">Fiverr Pro</span><span class="v">sami_malik</span></a>
       </div>
     </div>
+  </section>
 
-    <div class="main-footer__lower">
-      &copy; Copyright
+</main>
 
-        <span id="year"></span>
-        <script>
-          const currentYear = new Date().getFullYear();
-          document.getElementById("year").textContent = currentYear;
-        </script>
-      . Made by
-      <a rel="noreferrer" target="_blank" href="https://www.fiverr.com/sami_malik?up_rollout=true">Sami Malik</a>
-    </div>
-  </footer>
+<footer>
+  <div class="wrap foot-in">
+    <span>BS Computer Science &mdash; Capital University of Science &amp; Technology &middot; CGPA 3.61</span>
+    <span>Rawalpindi, Pakistan &middot; working with teams worldwide</span>
+  </div>
+</footer>
 
-  <script src='./js/index.js'></script>
-  
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-<script src='./js/testimonial.js'></script>
+<script>
+(function () {
+  "use strict";
+
+  /* ---- theme ---- */
+  var root = document.documentElement;
+  var stored = null;
+  try { stored = localStorage.getItem("theme"); } catch (e) {}
+  if (stored === "dark" || stored === "light") root.setAttribute("data-theme", stored);
+
+  document.getElementById("themeBtn").addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") === "dark" ||
+      (!root.hasAttribute("data-theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    var next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
+})();
+</script>
 
 </body>
-
-
 </html>
